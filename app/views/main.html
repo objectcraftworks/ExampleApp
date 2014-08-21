@@ -1,0 +1,67 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">ExampleApp</h3>
+</div>
+
+<section>
+        <h1 class="page-header">
+          Scenarios 
+          <small>Covering most common</small>
+        </h1>
+        <div ng-repeat="section in scenarios">
+       
+        <p>{{section.section}}</p>
+	   <ul class="nav nav-tabs nav-stacked span4" ng-repeat="concept in section.links ">
+		 <li><a ng-href="{{concept.link}}">{{concept.name}}</a>
+
+			
+			</li>
+          </ul>
+          <ul class="nav nav-tabs nav-stacked span4">
+          </ul>
+          <ul class="nav nav-tabs nav-stacked span4">
+          </ul>
+        </div>
+      </section>
+
+
+<section>
+        <h1 class="page-header">
+          Selenium API 
+          <small></small>
+        </h1>
+        <div ng-repeat="section in concepts">
+       
+        <p>{{section.section}}</p>
+	   <ul class="nav nav-tabs nav-stacked span4" ng-repeat="concept in section.links ">
+		 <li><a ng-href="{{concept.link}}">{{concept.name}}</a>
+
+			
+			</li>
+          </ul>
+          <ul class="nav nav-tabs nav-stacked span4">
+          </ul>
+          <ul class="nav nav-tabs nav-stacked span4">
+          </ul>
+        </div>
+      </section>
+<div class="row marketing">
+ Top 5 things to do
+  Forms
+  FormbyId Fields 
+  FormbyName
+  Form Submit 	    
+  Form validation
+  Ajax- Waiting for calls
+  Popups
+  Scrapping data from Html 
+  Keeping the states
+</div>
+
+<div class="footer">
+  <p>An Sample WebApp for selenium scripts. Built in AngularJs, Bootstrap, HTML5Boilerplate</p>
+</div>
