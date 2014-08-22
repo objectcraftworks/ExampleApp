@@ -13,8 +13,13 @@ angular.module('exampleAppApp', [
 
   .config(['$routeProvider','$locationProvider', function ($routeProvider,$locationProvider) {
     $routeProvider
- 	.when('/api/locators/by/id',{
-             templateUrl: '/views/api/by/id.html',
+ 	.when('/api/:dir1/:file',{
+             templateUrl: function(routeParams){
+return '/views/api/' + routeParams.dir1 + '/' + '/' + routeParams.file +'.html';},
+	})
+ 	.when('/api/locators/by/:file',{
+             templateUrl: function(routeParams){
+return '/views/api/locators/' +  routeParams.file +'.html';},
 	})
       .when('/', {
         templateUrl: 'views/main.html',
